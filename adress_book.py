@@ -1,5 +1,5 @@
 def main():
-    address_book = \
+    address_books = \
         [{"name": "株式会社NEXT REVOLUTION",
                      "location": "岩手県八幡平市大更第35地割62番地",
                      "zipcode": "0287111"},
@@ -13,16 +13,16 @@ def main():
                      "zipcode": "0287302"},
         ]
 
-    print(address_book[0]["name"])
-    print(f"所在地　〒{address_book[0]['zipcode']} 住所 {address_book[0]['location']}")
+    print(address_books[0]["name"])
+    print(f"所在地　〒{address_books[0]['zipcode']} 住所 {address_books[0]['location']}")
 
-    print(address_book[1]["name"])
-    print(f"所在地　〒{address_book[1]['zipcode']} 住所 {address_book[1]['location']}")
+    print(address_books[1]["name"])
+    print(f"所在地　〒{address_books[1]['zipcode']} 住所 {address_books[1]['location']}")
 
-    print(address_book[2]["name"])
-    print(f"所在地　〒{address_book[2]['zipcode']} 住所 {address_book[2]['location']}")
+    print(address_books[2]["name"])
+    print(f"所在地　〒{address_books[2]['zipcode']} 住所 {address_books[2]['location']}")
 
-    for address in address_book:
+    for address in address_books:
         name = address["name"]
         location = address["location"]
         zipcode = address["zipcode"]
